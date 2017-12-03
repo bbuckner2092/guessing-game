@@ -1,8 +1,10 @@
 // Create secret number
 var secretNumber = 3;
 // ask user for guess
-var guess = Number(prompt("Guess a number"));
-alert(guess);
+// use Number method after prompt
+// Reduces repetitveness
+var stringGuess = prompt("Guess a number");
+var guess = Number(stringGuess);
 // check if guess is right
 // use Number in the if statement
 if (guess === secretNumber) {
